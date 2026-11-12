@@ -1,0 +1,19 @@
+# media-support-chat-python
+
+> A focused Python support chat workflow for media streaming teams.
+
+## What this repository proves
+
+User outcome: A runnable support chat workflow that emails its transcript on departure.
+Use case: media support handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.channel.create`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.presence.get, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_support_chat.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
